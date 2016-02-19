@@ -3,8 +3,9 @@ triplej
 
 Code relating to triplej.abc.net.au playlist data
 
-* playlist_20140929.zip: "Now Playing" data collected from http://www.abc.net.au/triplej/feeds/playout/triplej_sydney_3item_playout.xml (also listed on http://www.abc.net.au/triplej/player/triplej.htm) since 2012-02-07  
-* scrape.php: Scrapes the most recently played Triple J songs to a database. Kind of ugly.
+* triplej_plays_2015.csv: This file contains every track played on Australian radio station Triple J, as reported by the ABC Radio API, in 2015 (using GMT timestamps).
+* playlist_20140929.zip: "Now Playing" data collected from http://www.abc.net.au/triplej/feeds/playout/triplej_sydney_3item_playout.xml (also listed on http://www.abc.net.au/triplej/player/triplej.htm) from 2012-02-07 to 2014-09-29.
+* scrape.php: Scrapes the most recently played Triple J songs to a database. Kind of ugly, and obsolescent.
 
 ###Playlist CSV details:
 
@@ -12,7 +13,7 @@ One track (song) per row.
 
 Column details:
 
-* Timestamp: **Don't user this field.** Time the current track started playing. Recorded off Triple J website. Bit of a mistake as they change server timezone sometimes and I have to correct for it.
+* Timestamp: **Don't use this field.** Time the current track started playing. Recorded off Triple J website. Bit of a mistake as they change server timezone sometimes and I have to correct for it.
 * Date/time: **Use this for date and time.** Corrected date & time values
 * Trackname: Song title. Sometimes contains extra information, e.g. live performance data
 * Artist: Person or group that played the song
