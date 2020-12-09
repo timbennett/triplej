@@ -6,6 +6,7 @@ Code relating to triplej.abc.net.au playlist data
 * triplej_plays_2015.csv: This file contains every track played on Australian radio station Triple J, as reported by the ABC Radio API, in 2015 (using GMT timestamps). Columns: timestamp (GMT), track name, 1st-4th listed artists.
 * playlist_20140929.zip: "Now Playing" data collected from http://www.abc.net.au/triplej/feeds/playout/triplej_sydney_3item_playout.xml (also listed on http://www.abc.net.au/triplej/player/triplej.htm) from 2012-02-07 to 2014-09-29.
 * scrape.php: Scrapes the most recently played Triple J songs to a database. Kind of ugly, and obsolescent.
+* get_triplej_tracks.py: This file searches the ABC Radio API for plays between two timestamps (q_from & q_to) on a given radio station (default triplej). Newer (and pulls from a current system) but lacking documentation.
 
 ###Playlist CSV details:
 
